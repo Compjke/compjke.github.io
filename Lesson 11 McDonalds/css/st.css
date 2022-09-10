@@ -463,42 +463,76 @@ input[name="town"]::placeholder {
 }
 /* ========================== */
 
-/* footer */
+/* partners */
 
-.footer {
-   padding-top: 35px;
+.partners {
+   padding: 35px 0;
 }
-.footer__container {
+.partners__container {
 }
-.footer__info {
+.partners__info {
    background: #ffffff;
    border-radius: 10px;
    width: 65%;
    padding: 30px 0px 30px 30px;
 }
-.footer__info-title {
+.partners__info-title {
    font-size: 1.4rem;
    line-height: 1.2;
    color: #999999;
    margin-bottom: 8px;
 }
 
-.footer__info-text {
+.partners__info-text {
    font-size: 1.6rem;
    line-height: 1.25;
 }
-.footer__info-text:not(:last-child) {
+.partners__info-text:not(:last-child) {
    margin-bottom: 8px;
 }
 
 @media screen and (max-width: 767.98px) {
-   .footer__info {
+   .partners__info {
       width: 100%;
    }
 }
 
-.arrow-up{
+.arrow-up {
    position: fixed;
-   bottom: 0;
-   left: 5%;
+   bottom: 2%;
+   left: 2%;
+}
+
+/* FOOTER */
+
+.footer {
+   background: linear-gradient(91.41deg, #323232 25.4%, #000000 75.33%);
+   padding: 30px 0;
+   align-items: center;
+}
+.footer__container {
+   display: flex;
+   justify-content: space-between;
+}
+.footer__list {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+.footer__item {
+}
+.footer__link {
+   font-size: 1.8rem;
+   line-height: 1.2;
+   color: #ffffff;
+}
+.footer__social {
+   display: flex;
+   gap:20px;
+}
+.footer__social a{
+   transition: all .3s linear;
+}
+.footer__social a:hover{
+   scale: 1.2;
 }
