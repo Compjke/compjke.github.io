@@ -72,7 +72,7 @@ var line = 8;
 
 for (var i = 0; i < line; i++) {
 	for (var probel = (i + 1); probel < line; probel++) {
-		document.write("&nbsp;")
+		document.write("-")
 	}
 	for (var zvezda = 1 + i; zvezda > 0; zvezda--) {
 		document.write("&#9734;")
@@ -86,8 +86,8 @@ document.write("<br>Ромб<br><br>")
 var line = 8;
 
 for (var i = 0; i < line; i++) {
-	for (var probel = (i + 1); probel < line; probel++) {
-		document.write("&nbsp;")
+	for (var probel = (i); probel < line; probel++) {
+		document.write("-")
 	}
 	for (var zvezda = (i + 1); zvezda > 0; zvezda--) {
 		document.write("&#9734;")
@@ -96,9 +96,9 @@ for (var i = 0; i < line; i++) {
 }
 for (var i = 0; i < line; i++) {
 	for (var probel = (i + 1); probel > 1; probel--) {
-		document.write("&nbsp;")
+		document.write("-")
 	}
-	for (var zvezda = (i); zvezda < line; zvezda++) {
+	for (var zvezda = (i - 1); zvezda < line; zvezda++) {
 		document.write("&#9734;")
 	}
 	document.write("<br>")
@@ -106,23 +106,23 @@ for (var i = 0; i < line; i++) {
 
 // Ромб чуть по другому
 document.write("<br><br><br>")
-var line = 15;
+var line = 10;
 
 for (var i = 0; i < line; i++) {
-	for (var probel = (i + 1); probel < line; probel++) {
-		document.write("&nbsp;")
+	for (var probel = (i); probel < line; probel++) {
+		document.write("-")
 	}
-	for (var zvezda = (i); zvezda > 0; zvezda--) {
+	for (var zvezda = (i + 1); zvezda > 0; zvezda--) {
 		document.write("&#9734;")
 	}
 	document.write("<br>")
 }
 
 for (var i = line; i > 0; i--) {
-	for (var probel = (i + 1); probel < line; probel++) {
-		document.write("&nbsp;")
+	for (var probel = (i); probel < line; probel++) {
+		document.write("-")
 	}
-	for (var zvezda = (i); zvezda > 0; zvezda--) {
+	for (var zvezda = (i + 1); zvezda > 0; zvezda--) {
 		document.write("&#9734;")
 	}
 	document.write("<br>")
