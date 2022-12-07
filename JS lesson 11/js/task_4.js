@@ -30,6 +30,7 @@ ElInput.addEventListener('focus', (e)=>{
 
 ElInput.addEventListener('focusout', (e)=>{
    if(ElInput.value === ''){
+      ElInput.style.border = '';
       e.preventDefault()
    }else if (ElInput.value < 0) {
       ElInput.style.border = '2px solid red'
@@ -38,7 +39,6 @@ ElInput.addEventListener('focusout', (e)=>{
       crossBtn.remove()
    }
    else{
-   ElInput.style.border = '';
    span.innerText = ElInput.value;
    ElInput.insertAdjacentElement('beforebegin',span)
    span.insertAdjacentElement('afterend',crossBtn)
