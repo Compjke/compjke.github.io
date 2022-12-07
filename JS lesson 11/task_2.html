@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        max-width: 250px;
+        margin-bottom: 25px;
+      }
+    </style>
+    <title>Task 2</title>
+  </head>
+  <body>
+    <!-- Дано інпути. Зробіть так, щоб усі інпути втрати фокусу перевіряли свій вміст на правильну кількість символів. 
+      Скільки символів має бути в інпуті, зазначається в атрибуті data-length. Якщо вбито правильну кількість, то межа інпуту стає зеленою, 
+      якщо неправильна – червоною. -->
+
+    <input type="text" placeholder="3 символи" data-length="3" /> 
+    <input type="text" placeholder="5 символів" data-length="5" />
+    <input type="text" placeholder="6 символів" data-length="6" />
+    <input type="text" placeholder="2 символи" data-length="2" />
+    <input type="text" placeholder="3 символи" data-length="3" />
+
+    <div id="test"></div>
+
+    <script>
+
+      const allInputs = document.querySelectorAll("input");
+
+      allInputs.forEach((input) => {
+
+        input.addEventListener("blur", (e) => {
+
+          const inputValue = e.target.value;
+         
+          if (inputValue.length.toString() !== input.dataset.length) {
+            input.style.border = "1px solid rgb(225, 0, 0)"
+          } else {
+            input.style.border = "1px solid rgb(10, 199, 10)"
+          }
+
+        });
+        
+      });
+    </script>
+  </body>
+</html>

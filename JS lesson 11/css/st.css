@@ -1,0 +1,15 @@
+.kievstar{
+   background: url(../img/kievstar.gif) no-repeat ;
+   background-position: right center;
+   background-size: 40px;
+}
+.life{
+   background: url(../img/life.jpg) no-repeat ;
+   background-position: right center;
+   background-size: 40px;
+}
+.mts{
+   background: url(../img/vodafone.png) no-repeat ;
+   background-position: right center;
+   background-size: 40px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        max-width: 250px;
+        margin-bottom: 25px;
+      }
+    </style>
+    <title>Task 1</title>
+  </head>
+  <body>
+    <!-- Прив'яжіть усім інпутам наступну подію - втрата фокусу кожен інпут виводить своє value в параграф з id="test" -->
+
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+
+    <div id="test"></div>
+    <script>
+      const allInputs = document.querySelectorAll("input");
+
+      allInputs.forEach((input , ind) => {
+
+        input.addEventListener("blur", (e) => {
+          const div = document.querySelector("#test");
+          div.innerHTML += `<br/> <p>Значение инпута по индексу ${ind} : "${e.target.value}"</p>`
+        });
+
+      });
+    </script>
+  </body>
+</html>
