@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./catalog.css" />
+    <title>Sportfit-Catalog</title>
+  </head>
+
+  <body>
+    <header id="home" class="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+         <div class="container-fluid header__container">
+           <a class="main-logo" href="/">
+            <img  src="../img/header/logo.png" alt="Logotype" />
+         </a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav menu__items">
+               <li class="nav-item">
+                 <a class="nav-link active menu__link" aria-current="page" href="/">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link menu__link active-link" href="#">CATALOG</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link menu__link" href="#">SHORTS</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link menu__link" href="#">SHIRTS</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link menu__link" href="#">PANTS</a>
+               </li>
+             </ul>
+             <form  role="search">
+                  <input
+                     class="header__input"
+                    type="search"
+                    name="search"
+                    placeholder="SEARCH STORE HERE"
+                    class="header__input"
+                  />
+             </form>
+             <a  class='basket' href="../basket/basket.html">
+               <img  src="../img/basket/2849824-basket-buy-market-multimedia-shop-shopping-store_107977.svg" alt="basket">
+            </a>
+           </div>
+         </div>
+       </nav>
+    </header>
+
+    <div class="search">
+      <input class="search__input" type="search" placeholder="SEARCH">
+    </div>
+
+    <div class="catalog__container">
+
+      <aside class="catalog__sb-panel">
+
+         <div class="sb-panel__cheked-size">
+            <div class="accordion" id="accordionExample">
+               <div class="accordion-item">
+                 <h2 class="accordion-header" id="headingOne">
+                   <button class="accordion-button size-chek" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     SIZE
+                   </button>
+                 </h2>
+                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                   <div class="accordion-body">
+                     <div class="sizes">
+                        <ul class="sizes__list">
+                           <li class="sizes__item">32</li>
+                           <li class="sizes__item">34</li>
+                           <li class="sizes__item">36</li>
+                           <li class="sizes__item">38</li>
+                           <li class="sizes__item">40</li>
+                        </ul>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div> 
+         </div>
+
+         <div class="sb-panel__cheked-color">
+            <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                     <button class="accordion-button collapsed size-chek" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        COLOR
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="colors">
+                           <ul class="sizes__list">
+                              <li class="sizes__item color__gray" data-color="gray"></li>
+                              <li class="sizes__item color__black" data-color="black"></li>
+                              <li class="sizes__item color__green" data-color="green"></li>
+                              <li class="sizes__item color__blue" data-color="blue"></li>
+                              <li class="sizes__item color__red" data-color="red"></li>
+                              <li class="sizes__item color__white" data-color="white"></li>
+                           </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div> 
+          </div>
+
+          <div class="sb-panel__cheked-price">
+            <div class="accordion" id="accordionExample">
+               <div class="accordion-item">
+                 <h2 class="accordion-header" id="headingThree">
+                   <button class="accordion-button size-chek" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                     Filter by price
+                   </button>
+                 </h2>
+                 <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                   <div class="accordion-body">
+                     <div class="prices">
+                        <ul class="prices__list">
+                           <label class="price__chekbox">
+                              <input type="checkbox" value="less-15">
+                              less than 15
+                           </label>
+                           <label class="price__chekbox">
+                              <input type="checkbox" value="less-30">
+                              less than 30 & more than 15
+                           </label>
+                           <label class="price__chekbox">
+                              <input type="checkbox" value="more-50">
+                              more than 50
+                           </label>
+                        </ul>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div> 
+         </div>
+         
+            
+      </aside>
+   <div class="catalog__wrapper">
+         <div class="catalog__items"></div>
+         <div class="pagination"></div>
+      </div>
+   </div>
+  
+   <a href="#home" class="btn-to-home">
+      <img src="../img/button-home.png" alt="Button to home">
+   </a>
+
+
+
+
+    <footer class="footer">
+      <div class="footer-top">
+         <div class="f-t__container">
+            <div class="f-t__column">
+               <div class="f-t__title">
+                  ORDERING ONLINE
+               </div>
+               <a href="#" class="f-t__link">
+                  Account Login
+               </a>
+               <a href="#" class="f-t__link">
+                  Our Guarantee
+               </a>
+               <a href="#" class="f-t__link">
+                  Sportif Stretch Guide
+               </a>
+               <a href="#" class="f-t__link">
+                  Size Chart & Sizing Information
+               </a>
+               <a href="#" class="f-t__link">
+                  Hemming Information
+               </a>
+               <a href="#" class="f-t__link">
+                  Ordering & Payment
+               </a>
+               <a href="#" class="f-t__link">
+                  Shipping Information
+               </a>
+               <a href="#" class="f-t__link">
+                  Returns
+               </a>
+            </div>
+            <div class="f-t__column">
+               <div class="f-t__title">
+                  ABOUT SPORTIF
+               </div>
+               <a href="#" class="f-t__link">
+                  COVID-19 Response
+               </a>
+               <a href="#" class="f-t__link">
+                  History
+               </a>
+               <a href="#" class="f-t__link">
+                  Legacy
+               </a>
+               <a href="#" class="f-t__link">
+                  Good Sam Program
+               </a>
+               <a href="#" class="f-t__link">
+                  Privacy & Security
+               </a>
+               <a href="#" class="f-t__link">
+                  Terms & Conditions
+               </a>
+               <a href="#" class="f-t__link">
+                  Careers
+               </a>
+            </div>
+            <div class="f-t__column">
+               <div class="f-t__title">
+                  QUICK LINKS
+               </div>
+               <a href="#" class="f-t__link">
+                  FAQs
+               </a>
+               <a href="#" class="f-t__link">
+                  Shop Online Catalog
+               </a>
+               <a href="#" class="f-t__link">
+                  Contact Us
+               </a>
+            </div>
+            <div class="f-t__column">
+               <div class="f-t__title">
+                  GET TO KNOW US
+               </div>
+               <p class="f-t__description">
+                  Sign up for our weekly newsletter and get a 10% off coupon by email for your first order!
+                  <span>Sign Up for Our Newsletter:</span>
+               </p>
+               <form action="#" class="footer-form">
+                  <div class="input-mail">
+                     <input type="mail" name="mail" placeholder="EMAIL ADRESS" required>
+                     <input type="submit" value="SUBSCRIBE"></input>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <div class="f-b__container">
+            <div class="footer-bottom__copyrights">©2021 Sportif Mailorder. All Rights Reserved.</div>
+         </div>
+      </div>
+   </footer>
+
+   
+   <div class="popup">
+      <div class="popup__body">
+         <!-- <button class="popup__close">X</button> -->
+      </div>
+   </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./catalog.js" type="module"></script>
+  </body>
+</html>

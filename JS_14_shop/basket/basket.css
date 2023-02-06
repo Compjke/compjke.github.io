@@ -1,0 +1,39 @@
+.cheked-products{
+   max-width: 1300px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.cheked-products-item{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cheked-products-item-img {
+   width: 50%;
+}
+.cheked-products-item-img img{
+   width: 100%;
+}
+
+.description-product{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   font-size: 20px;
+}
+
+.delete__btn{
+   align-self: flex-start;
+   font-size: 30px;
+   transform:rotateZ(50deg);
+   background: transparent;
+}
+
+.empty{
+   font-size: 2.5em;
+   margin: 0 auto 20px;
+}
